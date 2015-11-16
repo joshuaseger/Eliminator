@@ -32,6 +32,8 @@
 		24EADF631BF9578600558460 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF621BF9578600558460 /* SystemConfiguration.framework */; };
 		24EADF651BF9579700558460 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF641BF9579700558460 /* libz.tbd */; };
 		24EADF671BF957A100558460 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF661BF957A100558460 /* libsqlite3.tbd */; };
+		24EADF691BF95ED700558460 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EADF681BF95ED700558460 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24EADF6B1BF9657000558460 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EADF6A1BF9657000558460 /* AddEventViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		24EADF621BF9578600558460 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		24EADF641BF9579700558460 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		24EADF661BF957A100558460 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		24EADF681BF95ED700558460 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		24EADF6A1BF9657000558460 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 		24DB63E81BE7E8E900AB5902 /* Eliminator */ = {
 			isa = PBXGroup;
 			children = (
+				24EADF681BF95ED700558460 /* HomeViewController.swift */,
+				24EADF6A1BF9657000558460 /* AddEventViewController.swift */,
 				24EADF461BF956E900558460 /* Bolts.framework */,
 				24EADF471BF956E900558460 /* Parse.framework */,
 				24EADF481BF956E900558460 /* ParseCrashReporting.framework */,
@@ -327,8 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DB63EE1BE7E8E900AB5902 /* SecondViewController.swift in Sources */,
+				24EADF6B1BF9657000558460 /* AddEventViewController.swift in Sources */,
 				24DB63EA1BE7E8E900AB5902 /* AppDelegate.swift in Sources */,
 				24DB63EC1BE7E8E900AB5902 /* FirstViewController.swift in Sources */,
+				24EADF691BF95ED700558460 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
