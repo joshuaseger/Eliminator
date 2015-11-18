@@ -1,0 +1,17 @@
+What fields should be on the Company Profile form?
+What fields should be on the Create Event form?
+What fields should be on the Create Candidate form?
+    Company Introduction
+    https://github.com/frederik-jacques/TNImageSliderViewController
+    Job Postings using UIPickerView
+    First/Last name
+    Email
+    LinkedIn Profile
+    Resume
+    Headshot
+    School
+    GPA
+    Major
+    Graduation Date
+
+What all should be displayed on the Landing page?
