@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248EC9251BFA514B001EED34 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EC9241BFA514B001EED34 /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24C4B7261BFCFE9A00535BD0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4B7251BFCFE9A00535BD0 /* EventCell.swift */; settings = {ASSET_TAGS = (); }; };
 		24DB63EA1BE7E8E900AB5902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB63E91BE7E8E900AB5902 /* AppDelegate.swift */; };
 		24DB63EC1BE7E8E900AB5902 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB63EB1BE7E8E900AB5902 /* FirstViewController.swift */; };
 		24DB63EE1BE7E8E900AB5902 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB63ED1BE7E8E900AB5902 /* SecondViewController.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		248EC9241BFA514B001EED34 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		24C4B7251BFCFE9A00535BD0 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		24DB63E61BE7E8E900AB5902 /* Eliminator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eliminator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DB63E91BE7E8E900AB5902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DB63EB1BE7E8E900AB5902 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			children = (
 				24EADF681BF95ED700558460 /* HomeViewController.swift */,
 				24EADF6A1BF9657000558460 /* AddEventViewController.swift */,
+				248EC9241BFA514B001EED34 /* EventsTableViewController.swift */,
 				24EADF461BF956E900558460 /* Bolts.framework */,
 				24EADF471BF956E900558460 /* Parse.framework */,
 				24EADF481BF956E900558460 /* ParseCrashReporting.framework */,
@@ -180,6 +185,7 @@
 				24DB63F21BE7E8E900AB5902 /* Assets.xcassets */,
 				24DB63F41BE7E8E900AB5902 /* LaunchScreen.storyboard */,
 				24DB63F71BE7E8E900AB5902 /* Info.plist */,
+				24C4B7251BFCFE9A00535BD0 /* EventCell.swift */,
 			);
 			path = Eliminator;
 			sourceTree = "<group>";
@@ -334,9 +340,11 @@
 			files = (
 				24DB63EE1BE7E8E900AB5902 /* SecondViewController.swift in Sources */,
 				24EADF6B1BF9657000558460 /* AddEventViewController.swift in Sources */,
+				248EC9251BFA514B001EED34 /* EventsTableViewController.swift in Sources */,
 				24DB63EA1BE7E8E900AB5902 /* AppDelegate.swift in Sources */,
 				24DB63EC1BE7E8E900AB5902 /* FirstViewController.swift in Sources */,
 				24EADF691BF95ED700558460 /* HomeViewController.swift in Sources */,
+				24C4B7261BFCFE9A00535BD0 /* EventCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

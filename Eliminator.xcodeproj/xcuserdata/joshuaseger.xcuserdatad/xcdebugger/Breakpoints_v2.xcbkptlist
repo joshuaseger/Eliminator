@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/AddEventViewController.swift"
-            timestampString = "469338315.435214"
+            timestampString = "469567621.79164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "CreateEvent(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,420 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/AddEventViewController.swift"
-            timestampString = "469338413.724202"
+            timestampString = "469567621.79164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "CreateEvent(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342196.5938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342114.236493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "EventsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.rowCount.getter : Swift.Int"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.250875"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.rowCount.materializeForSet : Swift.Int"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.251239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Eliminator.PastEventViewController"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.251414"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Eliminator.PastEventViewController&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.251577"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342196.5938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342196.5938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342196.5938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342012.790945"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "EventsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.TableView.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.253462"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.TableView.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.25367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.TableView.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.253837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Eliminator.PastEventViewController"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.253998"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342061.01227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "EventsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.__deallocating_deinit"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.255084"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Eliminator.PastEventViewController"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.255258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Eliminator.PastEventViewController&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342115.255415"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/PastEventViewController.swift"
+            timestampString = "469342123.167265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "EventsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.events.getter : Swift.Array&lt;ObjectiveC.PFObject&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342123.170293"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.events.setter : Swift.Array&lt;ObjectiveC.PFObject&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342123.170535"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.events.materializeForSet : Swift.Array&lt;ObjectiveC.PFObject&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342123.170707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Eliminator.PastEventViewController"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342123.170885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.PastEventViewController.init (Eliminator.PastEventViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Eliminator.PastEventViewController&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/PastEventViewController.swift"
+                  timestampString = "469342123.171047"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/EventsViewController.swift"
+            timestampString = "469389552.057099"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "EventsViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/EventsTableViewController.swift"
+            timestampString = "469566594.529086"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
