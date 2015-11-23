@@ -11,12 +11,15 @@ import UIKit
 class EventCell: UITableViewCell {
 
     @IBOutlet weak var DateLabel: UILabel!
-    @IBOutlet weak var AttireLabel: UILabel!
+
     @IBOutlet weak var TitleLabel: UILabel!
-    @IBOutlet weak var LocationLabel: UILabel!
+
+ 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

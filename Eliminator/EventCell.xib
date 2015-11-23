@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="D6e-Ns-TWF" customClass="EventCell" customModule="Eliminator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="589" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D6e-Ns-TWF" id="0M7-Lx-tyQ">
+                <rect key="frame" x="0.0" y="0.0" width="589" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afr-qD-m3O">
+                        <rect key="frame" x="8" y="17" width="280" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-Tj-ZXz">
+                        <rect key="frame" x="313" y="17" width="201" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="PMG-Tj-ZXz" firstAttribute="trailing" secondItem="0M7-Lx-tyQ" secondAttribute="trailingMargin" id="2Va-Id-HBt"/>
+                    <constraint firstItem="PMG-Tj-ZXz" firstAttribute="top" secondItem="0M7-Lx-tyQ" secondAttribute="topMargin" constant="9" id="5vD-2x-OTw"/>
+                    <constraint firstItem="afr-qD-m3O" firstAttribute="leading" secondItem="0M7-Lx-tyQ" secondAttribute="leadingMargin" constant="4" id="Ct3-za-ydm"/>
+                    <constraint firstItem="afr-qD-m3O" firstAttribute="top" secondItem="0M7-Lx-tyQ" secondAttribute="topMargin" constant="9" id="ePb-gx-8fN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="DateLabel" destination="PMG-Tj-ZXz" id="KeC-d6-jbs"/>
+                <outlet property="TitleLabel" destination="afr-qD-m3O" id="83w-OL-xxD"/>
+            </connections>
+            <point key="canvasLocation" x="572.5" y="312"/>
+        </tableViewCell>
+    </objects>
+</document>

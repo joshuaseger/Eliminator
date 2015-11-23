@@ -11,14 +11,19 @@ import Parse
 
 class EventsTableViewController: UITableViewController {
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
     
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
 
-    @IBOutlet var MyTable: UITableView!
     var events = [PFObject]()
     var rowCount: Int = 0
     
-
     override func viewDidLoad() {
+        
         self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         super.viewDidLoad()
         var query = PFQuery(className:"FairEvent")
@@ -34,6 +39,7 @@ class EventsTableViewController: UITableViewController {
                 print("Error: \(error!) \(error!.userInfo)")
             }
             self.rowCount = self.events.count
+            self.tableView.registerNib(UINib(nibName: "EventCell", bundle: nil), forCellReuseIdentifier: "cell")
             self.tableView.reloadData()
         }
         
@@ -67,8 +73,6 @@ class EventsTableViewController: UITableViewController {
         let event = self.events[indexPath.row] as PFObject
         print(event["Title"] as? String);
         cell?.TitleLabel.text = event["Title"] as? String;
-        cell?.AttireLabel.text = event["Attire"] as? String;
-        cell?.LocationLabel.text = event["Location"] as? String;
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MMMM dd, yyyy"
         let date = dateFormatter.stringFromDate((event["Date"] as? NSDate)!)

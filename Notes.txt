@@ -1,4 +1,5 @@
 What fields should be on the Company Profile form?
+
 What fields should be on the Create Event form?
 What fields should be on the Create Candidate form?
     Company Introduction
@@ -12,6 +13,8 @@ What fields should be on the Create Candidate form?
     School
     GPA
     Major
-    Graduation Date
+    Graduation Date -> GradDate
 
 What all should be displayed on the Landing page?
+
+Hex for purple #d580ff

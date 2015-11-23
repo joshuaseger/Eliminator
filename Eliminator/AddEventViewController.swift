@@ -11,16 +11,22 @@ import Parse
 
 class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
     
     @IBOutlet var EventDate: UIDatePicker!
-    @IBOutlet var EventAttire: UIPickerView!
     @IBOutlet var EventSponsorParty: UITextField!
     @IBOutlet var EventLocation: UITextField!
     @IBOutlet var EventTitle: UITextField!
     var attireIndex = 0;
     @IBAction func CreateEvent(sender: AnyObject) {
         if !EventTitle.text!.isEmpty && !EventLocation.text!.isEmpty && !EventSponsorParty.text!.isEmpty {
-            var event = PFObject(className: "FairEvent")
+            var event = PFObject(className: "UpcomingEvent")
             event["Title"] = EventTitle.text
             event["Location"] = EventLocation.text
             event["SponsoringParty"] = EventSponsorParty.text
@@ -32,22 +38,18 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
                     self.displayAlertWithTitle("Event successfully saved!", message: "GREAT SUCCESS")
                     // The object has been saved.
                 } else {
+                    self.displayAlertWithTitle("Event did not save", message: error.debugDescription)
+
                     // There was a problem, check error.description
                 }
             }
         }
     }
-    @IBOutlet var CreateEventButton: UIButton!
-    @IBOutlet var FormBackground: UIView!
+
+
     @IBOutlet var AttirePicker: UIPickerView!
     let attireData = ["Formal", "Semi-Formal", "Casual"]
     override func viewDidLoad() {
-        CreateEventButton.layer.cornerRadius = 20.0
-        FormBackground.backgroundColor = UIColor.lightGrayColor()
-        FormBackground.layer.cornerRadius = 10.0
-        FormBackground.layer.borderColor = UIColor.grayColor().CGColor
-        FormBackground.layer.borderWidth = 0.5
-        self.view.backgroundColor = UIColor.blackColor()
         AttirePicker.dataSource = self
         AttirePicker.delegate = self
         super.viewDidLoad()
