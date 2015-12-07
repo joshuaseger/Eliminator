@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CandidateFormViewController" customModule="Eliminator" customModuleProvider="target">
             <connections>
+                <outlet property="headshotPreview" destination="V55-LG-sCa" id="LKK-FY-fyO"/>
+                <outlet property="resumePreview" destination="f8m-hy-blc" id="Ekh-Js-1jS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -112,9 +114,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kr-me-qlU">
                     <rect key="frame" x="117" y="90" width="22" height="22"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQi-hw-rvc">
-                    <rect key="frame" x="117" y="299" width="22" height="22"/>
+                    <connections>
+                        <action selector="takeHeadshot:" destination="-1" eventType="touchUpInside" id="yqE-re-DNu"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNg-by-nzg">
                     <rect key="frame" x="80" y="240" width="97" height="21"/>
@@ -128,6 +130,12 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQi-hw-rvc">
+                    <rect key="frame" x="117" y="299" width="22" height="22"/>
+                    <connections>
+                        <action selector="takeResume:" destination="-1" eventType="touchUpInside" id="BYT-hz-OIT"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>

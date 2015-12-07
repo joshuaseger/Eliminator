@@ -25,7 +25,7 @@
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yl-H4-pTS">
                                 <rect key="frame" x="200" y="379" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.30281230180000002" green="0.82247010549999999" blue="0.086154908000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign up!">
+                                <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -57,7 +57,7 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWI-cc-FLc">
                                 <rect key="frame" x="200" y="300" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.13270946859999999" green="0.61637888669999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -89,7 +89,7 @@
         <!--App Navigation Controller-->
         <scene sceneID="Scz-ZZ-KkP">
             <objects>
-                <navigationController id="QGM-hy-1lN" customClass="AppNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" id="QGM-hy-1lN" customClass="AppNavigationController" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Lch-Pm-yXp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-26" y="-311"/>
         </scene>
-        <!--Home Nav Controller-->
+        <!--HomeNavController-->
         <scene sceneID="ptg-cR-CLp">
             <objects>
-                <viewController id="nIf-ly-7eB" customClass="HomeNavController" customModule="Eliminator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeNavController" title="HomeNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nIf-ly-7eB" customClass="HomeNavController" customModule="Eliminator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J1H-WC-Afu"/>
                         <viewControllerLayoutGuide type="bottom" id="gHG-nB-iI2"/>

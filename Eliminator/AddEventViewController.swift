@@ -26,6 +26,9 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     @IBOutlet var EventLocation: UITextField!
     @IBOutlet var EventTitle: UITextField!
     var attireIndex = 0;
+    var jobPostings : [PFObject] = []
+
+    
     @IBAction func CreateEvent(sender: AnyObject) {
         if !EventTitle.text!.isEmpty && !EventLocation.text!.isEmpty && !EventSponsorParty.text!.isEmpty {
             let event = PFObject(className: "UpcomingEvent")
@@ -35,6 +38,11 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
             event["Attire"] = attireData[attireIndex];
             event["Date"] = EventDate.date
             
+            let jobPostRelation = event.relationforKey("JobPostList")
+            for post in self.jobPostings{
+                 post.saveInBackground()
+                 jobPostRelation.addObject(post)
+            }
             event.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
@@ -43,6 +51,7 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
                     self.user?.saveInBackgroundWithBlock {
                         (success: Bool, error: NSError?) -> Void in
                         if(success){
+                            
                             self.displayAlertWithTitle("Event successfully saved!", message: "GREAT SUCCESS")
                         }
                         else{
@@ -70,6 +79,26 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(animated: Bool) {
+
+        let relation = self.user!.relationForKey("JobPostingList")
+        relation.query()!.findObjectsInBackgroundWithBlock {
+            (posts: [PFObject]?, error: NSError?) -> Void in
+            if error == nil {
+                self.jobPostings = [PFObject]()
+                for post in posts!{
+                    print(post)
+                    self.jobPostings.append(post as PFObject)
+                }
+                if(posts?.count == 0){
+                    self.displayAlertWithTitle("No Jobs Posted yet", message: "Go to your company profile to create a job posting that will be automatically tied to any events you create")
+                }
+            }else {
+                self.displayAlertWithTitle("Failed to load job posts", message: "Check your network connectivity")
+            }
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

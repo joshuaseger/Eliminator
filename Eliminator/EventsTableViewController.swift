@@ -100,6 +100,7 @@ class EventsTableViewController: UITableViewController {
         let newViewController = storyBoard.instantiateViewControllerWithIdentifier("CandidateNavController") as! CandidateNavController
         newViewController.eventId = eventId;
         
+        
         self.navigationController?.pushViewController(newViewController, animated: true)
         
        
