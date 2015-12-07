@@ -11,6 +11,10 @@
 		24430D351C02AE2800DDDF03 /* CandidateNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24430D341C02AE2800DDDF03 /* CandidateNavController.swift */; settings = {ASSET_TAGS = (); }; };
 		245EA5851C14CDD90031729D /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245EA5841C14CDD90031729D /* AppNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 		248EC9251BFA514B001EED34 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EC9241BFA514B001EED34 /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24A93E371C163CE50032B7EB /* HeadshotPlaceholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24A93E361C163CE40032B7EB /* HeadshotPlaceholder.jpg */; settings = {ASSET_TAGS = (); }; };
+		24A93E391C163D710032B7EB /* ResumePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A93E381C163D710032B7EB /* ResumePlaceholder.png */; settings = {ASSET_TAGS = (); }; };
+		24A93E3B1C164B6B0032B7EB /* checkYes.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A93E3A1C164B6B0032B7EB /* checkYes.png */; settings = {ASSET_TAGS = (); }; };
+		24A93E3D1C164B760032B7EB /* xMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A93E3C1C164B760032B7EB /* xMark.png */; settings = {ASSET_TAGS = (); }; };
 		24C4B7261BFCFE9A00535BD0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4B7251BFCFE9A00535BD0 /* EventCell.swift */; settings = {ASSET_TAGS = (); }; };
 		24C4B7281BFD0D8E00535BD0 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24C4B7271BFD0D8E00535BD0 /* Notes.txt */; settings = {ASSET_TAGS = (); }; };
 		24CFEBBB1C14E2BB0064E8A0 /* CandidateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFEBB91C14E2BB0064E8A0 /* CandidateFormViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -73,6 +77,10 @@
 		24430D341C02AE2800DDDF03 /* CandidateNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateNavController.swift; path = ../../../../Documents/CandidateNavController.swift; sourceTree = "<group>"; };
 		245EA5841C14CDD90031729D /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		248EC9241BFA514B001EED34 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		24A93E361C163CE40032B7EB /* HeadshotPlaceholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HeadshotPlaceholder.jpg; sourceTree = "<group>"; };
+		24A93E381C163D710032B7EB /* ResumePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResumePlaceholder.png; sourceTree = "<group>"; };
+		24A93E3A1C164B6B0032B7EB /* checkYes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkYes.png; sourceTree = "<group>"; };
+		24A93E3C1C164B760032B7EB /* xMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xMark.png; sourceTree = "<group>"; };
 		24C4B7251BFCFE9A00535BD0 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		24C4B7271BFD0D8E00535BD0 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		24CFEBB91C14E2BB0064E8A0 /* CandidateFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateFormViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +203,10 @@
 		24DB63E81BE7E8E900AB5902 /* Eliminator */ = {
 			isa = PBXGroup;
 			children = (
+				24A93E3C1C164B760032B7EB /* xMark.png */,
+				24A93E3A1C164B6B0032B7EB /* checkYes.png */,
+				24A93E361C163CE40032B7EB /* HeadshotPlaceholder.jpg */,
+				24A93E381C163D710032B7EB /* ResumePlaceholder.png */,
 				24D8EFCC1C03C54A007D8686 /* HomeNavController.swift */,
 				24D8EFD01C03CB51007D8686 /* HomeViewController.xib */,
 				24EADF681BF95ED700558460 /* HomeViewController.swift */,
@@ -351,16 +363,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A93E371C163CE50032B7EB /* HeadshotPlaceholder.jpg in Resources */,
 				24EAD4571C09002200A523DD /* CompanyProfileViewController.xib in Resources */,
 				24D8EFD91C03D542007D8686 /* EventCell.xib in Resources */,
 				24D8EFD71C03D4DD007D8686 /* EventsTableViewController.xib in Resources */,
+				24A93E391C163D710032B7EB /* ResumePlaceholder.png in Resources */,
 				24C4B7281BFD0D8E00535BD0 /* Notes.txt in Resources */,
 				24CFEBBC1C14E2BB0064E8A0 /* CandidateFormViewController.xib in Resources */,
 				24DB63F61BE7E8E900AB5902 /* LaunchScreen.storyboard in Resources */,
 				24D8EFD11C03CB51007D8686 /* HomeViewController.xib in Resources */,
+				24A93E3D1C164B760032B7EB /* xMark.png in Resources */,
 				24DB63F31BE7E8E900AB5902 /* Assets.xcassets in Resources */,
 				24DB63F11BE7E8E900AB5902 /* Main.storyboard in Resources */,
 				24D8EFD31C03CFDE007D8686 /* AddEventViewController.xib in Resources */,
+				24A93E3B1C164B6B0032B7EB /* checkYes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,11 +53,11 @@ class HomeNavController: UIViewController {
         controllerArray.append(controller2)
         
         
-        controller3.title = "Upcoming Events"
+        controller3.title = "Events"
         controllerArray.append(controller3)
         
         
-        controller4.title = "Company Profile Events"
+        controller4.title = "Company Profile"
         controllerArray.append(controller4)
         /*
         let controller2 : AddEventViewController = AddEventViewController()

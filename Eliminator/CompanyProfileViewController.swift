@@ -16,7 +16,6 @@ class CompanyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         
     }
 
-
     @IBAction func createJobPosting(sender: AnyObject) {
         var jobPosting = PFObject(className: "JobPosting")
         jobPosting["Title"] = jobTitle.text
@@ -69,8 +68,7 @@ class CompanyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         jobState.delegate = self
         jobState.tag = 1
         jobPostingPicker.tag = 0
-        companyDescription.layer.borderWidth = 2.0
-        companyDescription.layer.cornerRadius =  5.0;
+        companyDescription.layer.cornerRadius =  10.0;
         // Do any additional setup after loading the view.
     }
 

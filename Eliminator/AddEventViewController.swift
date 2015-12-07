@@ -12,15 +12,6 @@ import Parse
 class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
     
     let user = PFUser.currentUser()
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-    }
-    
     @IBOutlet var EventDate: UIDatePicker!
     @IBOutlet var EventSponsorParty: UITextField!
     @IBOutlet var EventLocation: UITextField!
@@ -28,6 +19,13 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     var attireIndex = 0;
     var jobPostings : [PFObject] = []
 
+        override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
     
     @IBAction func CreateEvent(sender: AnyObject) {
         if !EventTitle.text!.isEmpty && !EventLocation.text!.isEmpty && !EventSponsorParty.text!.isEmpty {
@@ -68,11 +66,14 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
             }
         }
     }
-
-
+    
     @IBOutlet var AttirePicker: UIPickerView!
     let attireData = ["Formal", "Semi-Formal", "Casual"]
+    
+    
     override func viewDidLoad() {
+        EventDate.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
+        EventDate.performSelector("setHighlightsToday:", withObject:UIColor.whiteColor())
         AttirePicker.dataSource = self
         AttirePicker.delegate = self
         super.viewDidLoad()
@@ -110,8 +111,9 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return attireData.count
     }
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return attireData[row]
+    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let attributedString = NSAttributedString(string: attireData[row], attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+        return attributedString
     }
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {

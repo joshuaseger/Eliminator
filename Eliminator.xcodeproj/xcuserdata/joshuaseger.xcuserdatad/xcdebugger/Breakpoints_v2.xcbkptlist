@@ -402,11 +402,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Documents/CandidateNavController.swift"
-            timestampString = "471130357.668865"
+            timestampString = "471210385.192871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -482,11 +482,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/EventsTableViewController.swift"
-            timestampString = "471209406.413501"
+            timestampString = "471218556.198169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "EventsTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -546,11 +546,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/CompanyProfileViewController.swift"
-            timestampString = "471145608.953037"
+            timestampString = "471210036.076961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "CompanyProfileViewController"
             landmarkType = "3">
             <Locations>
@@ -651,15 +651,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/CandidateFormViewController.swift"
-            timestampString = "471202234.048826"
+            timestampString = "471223615.606074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "takeResume(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -671,12 +671,137 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eliminator/AddEventViewController.swift"
-            timestampString = "471205017.420171"
+            timestampString = "471218556.198169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "CreateEvent(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/CandidateFormViewController.swift"
+            timestampString = "471223615.606074"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "toggleJobInterest(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/CandidateFormViewController.swift"
+            timestampString = "471221439.699969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "CandidateFormViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.CandidateFormViewController.jobInterestArray.getter : Swift.Array&lt;Swift.Bool&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/Eliminator/CandidateFormViewController.swift"
+                  timestampString = "471221714.224703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.CandidateFormViewController.jobInterestArray.setter : Swift.Array&lt;Swift.Bool&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/Eliminator/CandidateFormViewController.swift"
+                  timestampString = "471221714.224843"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.CandidateFormViewController.jobInterestArray.materializeForSet : Swift.Array&lt;Swift.Bool&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/Eliminator/CandidateFormViewController.swift"
+                  timestampString = "471221714.224963"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.CandidateFormViewController.init (Eliminator.CandidateFormViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Eliminator.CandidateFormViewController"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/Eliminator/CandidateFormViewController.swift"
+                  timestampString = "471221714.225088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eliminator.CandidateFormViewController.init (Eliminator.CandidateFormViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Eliminator.CandidateFormViewController&gt;"
+                  moduleName = "Eliminator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaseger/Desktop/Eliminator/Eliminator/Eliminator/CandidateFormViewController.swift"
+                  timestampString = "471221714.225197"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eliminator/CandidateFormViewController.swift"
+            timestampString = "471223615.606074"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "takeResume(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

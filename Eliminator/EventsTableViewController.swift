@@ -54,8 +54,6 @@ class EventsTableViewController: UITableViewController {
 
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -80,7 +78,6 @@ class EventsTableViewController: UITableViewController {
         dateFormatter.dateFormat = "MMMM dd, yyyy"
         let date = dateFormatter.stringFromDate((event["Date"] as? NSDate)!)
         cell?.DateLabel.text = date;
-        
         
         return cell!
         
