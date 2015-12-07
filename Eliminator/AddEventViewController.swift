@@ -11,6 +11,8 @@ import Parse
 
 class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
     
+    let user = PFUser.currentUser()
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -26,19 +28,31 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     var attireIndex = 0;
     @IBAction func CreateEvent(sender: AnyObject) {
         if !EventTitle.text!.isEmpty && !EventLocation.text!.isEmpty && !EventSponsorParty.text!.isEmpty {
-            var event = PFObject(className: "UpcomingEvent")
+            let event = PFObject(className: "UpcomingEvent")
             event["Title"] = EventTitle.text
             event["Location"] = EventLocation.text
             event["SponsoringParty"] = EventSponsorParty.text
             event["Attire"] = attireData[attireIndex];
             event["Date"] = EventDate.date
+            
             event.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
-                    self.displayAlertWithTitle("Event successfully saved!", message: "GREAT SUCCESS")
+                    let relation = self.user!.relationForKey("UpcomingEventList")
+                    relation.addObject(event)
+                    self.user?.saveInBackgroundWithBlock {
+                        (success: Bool, error: NSError?) -> Void in
+                        if(success){
+                            self.displayAlertWithTitle("Event successfully saved!", message: "GREAT SUCCESS")
+                        }
+                        else{
+                            self.displayAlertWithTitle("Event did not save", message: "Failed to create relation for key Upcoming Event List")
+                        }
+                    }
+                    
                     // The object has been saved.
                 } else {
-                    self.displayAlertWithTitle("Event did not save", message: error.debugDescription)
+                    self.displayAlertWithTitle("Event did not save", message: "Failed to save event object. Check your connection!")
 
                     // There was a problem, check error.description
                 }

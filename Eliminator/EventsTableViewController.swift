@@ -18,7 +18,8 @@ class EventsTableViewController: UITableViewController {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
-
+    
+    let user = PFUser.currentUser()
     var events = [PFObject]()
     var rowCount: Int = 0
     
@@ -26,8 +27,10 @@ class EventsTableViewController: UITableViewController {
         
         self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         super.viewDidLoad()
-        var query = PFQuery(className:"FairEvent")
-        query.findObjectsInBackgroundWithBlock {
+        
+        let relation = user?.relationforKey("UpcomingEventList")
+
+        relation?.query()!.findObjectsInBackgroundWithBlock {
             (Events: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
                 self.events = [PFObject]()
@@ -83,9 +86,30 @@ class EventsTableViewController: UITableViewController {
         
     }
     
+
+    var valueToPass:String!;
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+        
+        // Get Cell Label
+        let indexPath = tableView.indexPathForSelectedRow;
+        let event = events[(indexPath?.row)!];
+        var eventId = event.objectId;
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let newViewController = storyBoard.instantiateViewControllerWithIdentifier("CandidateNavController") as! CandidateNavController
+        newViewController.eventId = eventId;
+        
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        
+       
+
+
+        
         
     }
+    
+
     
     
 }

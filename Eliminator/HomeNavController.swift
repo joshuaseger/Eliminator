@@ -11,11 +11,22 @@ import UIKit
 class HomeNavController: UIViewController {
 
     var pageMenu : CAPSPageMenu?
+    let controller1 : HomeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+    let controller2 : AddEventViewController = AddEventViewController(nibName: "AddEventViewController", bundle: nil)
+    let controller3 : EventsTableViewController = EventsTableViewController(nibName: "EventsTableViewController", bundle: nil)
+    let controller4 : CompanyProfileViewController = CompanyProfileViewController(nibName: "CompanyProfileViewController", bundle: nil)
+    var valueToPass : String?
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         // MARK: - UI Setup
+
+        self.addChildViewController(controller1);
+        self.addChildViewController(controller2);
+        self.addChildViewController(controller3);
+        self.addChildViewController(controller4);
+        
         
         self.title = "Eliminator"
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 30.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
@@ -33,20 +44,20 @@ class HomeNavController: UIViewController {
         // Initialize view controllers to display and place in array
         var controllerArray : [UIViewController] = []
         
-        let controller1 : HomeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        
         controller1.title = "Home"
         controllerArray.append(controller1)
         
-        let controller2 : AddEventViewController = AddEventViewController(nibName: "AddEventViewController", bundle: nil)
+       
         controller2.title = "Add Event"
         controllerArray.append(controller2)
         
-        let controller3 : EventsTableViewController = EventsTableViewController(nibName: "EventsTableViewController", bundle: nil)
+        
         controller3.title = "Upcoming Events"
         controllerArray.append(controller3)
         
-        let controller4 : AddEventViewController = AddEventViewController(nibName: "AddEventViewController", bundle: nil)
-        controller4.title = "Past Events"
+        
+        controller4.title = "Company Profile Events"
         controllerArray.append(controller4)
         /*
         let controller2 : AddEventViewController = AddEventViewController()
@@ -82,7 +93,7 @@ class HomeNavController: UIViewController {
     }
     
     func didTapGoToLeft() {
-        var currentIndex = pageMenu!.currentPageIndex
+        let currentIndex = pageMenu!.currentPageIndex
         
         if currentIndex > 0 {
             pageMenu!.moveToPage(currentIndex - 1)
@@ -90,7 +101,7 @@ class HomeNavController: UIViewController {
     }
     
     func didTapGoToRight() {
-        var currentIndex = pageMenu!.currentPageIndex
+        let currentIndex = pageMenu!.currentPageIndex
         
         if currentIndex < pageMenu!.controllerArray.count {
             pageMenu!.moveToPage(currentIndex + 1)
@@ -129,5 +140,21 @@ class HomeNavController: UIViewController {
         
         
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
+    }
+    
+    override func viewDidLoad() {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        
+        if (segue.identifier == "EnterEvent") {
+            
+            // initialize new view controller and cast it as your view controller
+            var viewController = segue.destinationViewController as! CandidateNavController
+            // your new view controller should have property that will store passed value
+
+        }
+        
     }
 }

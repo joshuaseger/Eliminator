@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
                 self.performSegueWithIdentifier("LoggedIn", sender: nil)
                 // Do stuff after successful login.
             } else {
-                self.displayError("Failed to Login", error: (error?.description)!)
+                self.displayError("Failed to Login", error: "Invalid credentials were most likely cause")
                 // The login failed. Check error to see why.
             }
         }

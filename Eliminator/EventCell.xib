@@ -17,17 +17,16 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afr-qD-m3O">
                         <rect key="frame" x="8" y="17" width="280" height="55"/>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-Tj-ZXz">
                         <rect key="frame" x="313" y="17" width="201" height="55"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="PMG-Tj-ZXz" firstAttribute="trailing" secondItem="0M7-Lx-tyQ" secondAttribute="trailingMargin" id="2Va-Id-HBt"/>
                     <constraint firstItem="PMG-Tj-ZXz" firstAttribute="top" secondItem="0M7-Lx-tyQ" secondAttribute="topMargin" constant="9" id="5vD-2x-OTw"/>

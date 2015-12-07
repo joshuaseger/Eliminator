@@ -19,47 +19,63 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kV2-Tp-JWt">
+                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kV2-Tp-JWt">
                     <rect key="frame" x="166" y="286" width="268" height="151"/>
                     <date key="date" timeIntervalSinceReferenceDate="470011992.93804699">
                         <!--2015-11-23 22:53:12 +0000-->
                     </date>
                 </datePicker>
-                <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-n2-9Au">
-                    <rect key="frame" x="226" y="194" width="148" height="77"/>
-                </pickerView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sponsoring Party" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-4d-6cS">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sponsoring Party" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-4d-6cS">
                     <rect key="frame" x="165" y="156" width="271" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="271" id="RDQ-CA-bHi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Location" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-qY-JBR">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-qY-JBR">
                     <rect key="frame" x="165" y="118" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="269" id="5sb-Qr-fXI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-FW-V03">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-FW-V03">
                     <rect key="frame" x="165" y="80" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="269" id="0Ez-yD-4o2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-JO-pu7">
-                    <rect key="frame" x="220" y="486" width="158" height="30"/>
-                    <color key="backgroundColor" red="1" green="0.048007339259999997" blue="0.92723802349999995" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-JO-pu7">
+                    <rect key="frame" x="208" y="467" width="184" height="57"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Create Event">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.83529411760000005" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="CreateEvent:" destination="-1" eventType="touchUpInside" id="0EU-1C-oSn"/>
                     </connections>
                 </button>
+                <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-n2-9Au">
+                    <rect key="frame" x="225" y="194" width="148" height="77"/>
+                </pickerView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kV2-Tp-JWt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DQR-Jz-tln"/>
                 <constraint firstItem="P2b-JO-pu7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DYL-Rz-vpg"/>
+                <constraint firstItem="C7h-4d-6cS" firstAttribute="top" secondItem="Yba-qY-JBR" secondAttribute="bottom" constant="8" id="GVp-Yg-VDK"/>
+                <constraint firstItem="kV2-Tp-JWt" firstAttribute="top" secondItem="aRm-n2-9Au" secondAttribute="bottom" constant="15" id="OFk-dM-0mb"/>
                 <constraint firstItem="Yba-qY-JBR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SjA-w2-W0m"/>
+                <constraint firstItem="P2b-JO-pu7" firstAttribute="top" secondItem="kV2-Tp-JWt" secondAttribute="bottom" constant="49" id="Tzw-7H-fFl"/>
                 <constraint firstItem="C7h-4d-6cS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZQa-ut-gey"/>
+                <constraint firstItem="aRm-n2-9Au" firstAttribute="top" secondItem="C7h-4d-6cS" secondAttribute="bottom" constant="8" id="amm-43-CyI"/>
+                <constraint firstItem="bDD-FW-V03" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="bOD-CA-mIr"/>
+                <constraint firstItem="Yba-qY-JBR" firstAttribute="top" secondItem="bDD-FW-V03" secondAttribute="bottom" constant="8" id="bQs-8u-Vn4"/>
                 <constraint firstItem="aRm-n2-9Au" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bwz-Qc-aMt"/>
                 <constraint firstItem="bDD-FW-V03" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tOa-1Y-N2P"/>
             </constraints>

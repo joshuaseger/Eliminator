@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		24430D311C02AD9600DDDF03 /* PageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24430D301C02AD9600DDDF03 /* PageMenu.swift */; settings = {ASSET_TAGS = (); }; };
 		24430D351C02AE2800DDDF03 /* CandidateNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24430D341C02AE2800DDDF03 /* CandidateNavController.swift */; settings = {ASSET_TAGS = (); }; };
-		24430D3A1C02B2B400DDDF03 /* CandidateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24430D381C02B2B400DDDF03 /* CandidateFormViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		245EA5851C14CDD90031729D /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245EA5841C14CDD90031729D /* AppNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 		248EC9251BFA514B001EED34 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EC9241BFA514B001EED34 /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		24C4B7261BFCFE9A00535BD0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4B7251BFCFE9A00535BD0 /* EventCell.swift */; settings = {ASSET_TAGS = (); }; };
 		24C4B7281BFD0D8E00535BD0 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24C4B7271BFD0D8E00535BD0 /* Notes.txt */; settings = {ASSET_TAGS = (); }; };
+		24CFEBBB1C14E2BB0064E8A0 /* CandidateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFEBB91C14E2BB0064E8A0 /* CandidateFormViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24CFEBBC1C14E2BB0064E8A0 /* CandidateFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CFEBBA1C14E2BB0064E8A0 /* CandidateFormViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		24D8EFCB1C039BC8007D8686 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D8EFCA1C039BC8007D8686 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		24D8EFCD1C03C54A007D8686 /* HomeNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D8EFCC1C03C54A007D8686 /* HomeNavController.swift */; settings = {ASSET_TAGS = (); }; };
 		24D8EFCF1C03C632007D8686 /* PastEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D8EFCE1C03C632007D8686 /* PastEventsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -26,6 +28,8 @@
 		24DB63F61BE7E8E900AB5902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DB63F41BE7E8E900AB5902 /* LaunchScreen.storyboard */; };
 		24DB64011BE7E8E900AB5902 /* EliminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB64001BE7E8E900AB5902 /* EliminatorTests.swift */; };
 		24DB640C1BE7E8E900AB5902 /* EliminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB640B1BE7E8E900AB5902 /* EliminatorUITests.swift */; };
+		24EAD4561C09002200A523DD /* CompanyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EAD4541C09002200A523DD /* CompanyProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		24EAD4571C09002200A523DD /* CompanyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24EAD4551C09002200A523DD /* CompanyProfileViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		24EADF4D1BF956E900558460 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF461BF956E900558460 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		24EADF4E1BF956E900558460 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF471BF956E900558460 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		24EADF4F1BF956E900558460 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EADF481BF956E900558460 /* ParseCrashReporting.framework */; settings = {ASSET_TAGS = (); }; };
@@ -67,10 +71,12 @@
 /* Begin PBXFileReference section */
 		24430D301C02AD9600DDDF03 /* PageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageMenu.swift; path = ../../../../Documents/PageMenu.swift; sourceTree = "<group>"; };
 		24430D341C02AE2800DDDF03 /* CandidateNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateNavController.swift; path = ../../../../Documents/CandidateNavController.swift; sourceTree = "<group>"; };
-		24430D381C02B2B400DDDF03 /* CandidateFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateFormViewController.swift; path = ../../../../Documents/CandidateFormViewController.swift; sourceTree = "<group>"; };
+		245EA5841C14CDD90031729D /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		248EC9241BFA514B001EED34 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		24C4B7251BFCFE9A00535BD0 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		24C4B7271BFD0D8E00535BD0 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		24CFEBB91C14E2BB0064E8A0 /* CandidateFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateFormViewController.swift; sourceTree = "<group>"; };
+		24CFEBBA1C14E2BB0064E8A0 /* CandidateFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateFormViewController.xib; sourceTree = "<group>"; };
 		24D8EFCA1C039BC8007D8686 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		24D8EFCC1C03C54A007D8686 /* HomeNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavController.swift; sourceTree = "<group>"; };
 		24D8EFCE1C03C632007D8686 /* PastEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventsViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 		24DB64071BE7E8E900AB5902 /* EliminatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EliminatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DB640B1BE7E8E900AB5902 /* EliminatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliminatorUITests.swift; sourceTree = "<group>"; };
 		24DB640D1BE7E8E900AB5902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EAD4541C09002200A523DD /* CompanyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyProfileViewController.swift; sourceTree = "<group>"; };
+		24EAD4551C09002200A523DD /* CompanyProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyProfileViewController.xib; sourceTree = "<group>"; };
 		24EADF461BF956E900558460 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		24EADF471BF956E900558460 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		24EADF481BF956E900558460 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -194,11 +202,14 @@
 				24D8EFD21C03CFDE007D8686 /* AddEventViewController.xib */,
 				248EC9241BFA514B001EED34 /* EventsTableViewController.swift */,
 				24D8EFD61C03D4DD007D8686 /* EventsTableViewController.xib */,
+				24EAD4541C09002200A523DD /* CompanyProfileViewController.swift */,
+				24EAD4551C09002200A523DD /* CompanyProfileViewController.xib */,
 				24C4B7251BFCFE9A00535BD0 /* EventCell.swift */,
 				24D8EFD81C03D542007D8686 /* EventCell.xib */,
 				24D8EFCE1C03C632007D8686 /* PastEventsViewController.swift */,
 				24430D341C02AE2800DDDF03 /* CandidateNavController.swift */,
-				24430D381C02B2B400DDDF03 /* CandidateFormViewController.swift */,
+				24CFEBB91C14E2BB0064E8A0 /* CandidateFormViewController.swift */,
+				24CFEBBA1C14E2BB0064E8A0 /* CandidateFormViewController.xib */,
 				24D8EFCA1C039BC8007D8686 /* LoginViewController.swift */,
 				24EADF461BF956E900558460 /* Bolts.framework */,
 				24EADF471BF956E900558460 /* Parse.framework */,
@@ -213,6 +224,7 @@
 				24DB63F41BE7E8E900AB5902 /* LaunchScreen.storyboard */,
 				24DB63F71BE7E8E900AB5902 /* Info.plist */,
 				24430D301C02AD9600DDDF03 /* PageMenu.swift */,
+				245EA5841C14CDD90031729D /* AppNavigationController.swift */,
 			);
 			path = Eliminator;
 			sourceTree = "<group>";
@@ -297,6 +309,7 @@
 		24DB63DE1BE7E8E900AB5902 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Creighton;
 				TargetAttributes = {
@@ -338,9 +351,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EAD4571C09002200A523DD /* CompanyProfileViewController.xib in Resources */,
 				24D8EFD91C03D542007D8686 /* EventCell.xib in Resources */,
 				24D8EFD71C03D4DD007D8686 /* EventsTableViewController.xib in Resources */,
 				24C4B7281BFD0D8E00535BD0 /* Notes.txt in Resources */,
+				24CFEBBC1C14E2BB0064E8A0 /* CandidateFormViewController.xib in Resources */,
 				24DB63F61BE7E8E900AB5902 /* LaunchScreen.storyboard in Resources */,
 				24D8EFD11C03CB51007D8686 /* HomeViewController.xib in Resources */,
 				24DB63F31BE7E8E900AB5902 /* Assets.xcassets in Resources */,
@@ -370,8 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EAD4561C09002200A523DD /* CompanyProfileViewController.swift in Sources */,
 				24D8EFCD1C03C54A007D8686 /* HomeNavController.swift in Sources */,
-				24430D3A1C02B2B400DDDF03 /* CandidateFormViewController.swift in Sources */,
+				24CFEBBB1C14E2BB0064E8A0 /* CandidateFormViewController.swift in Sources */,
 				24430D351C02AE2800DDDF03 /* CandidateNavController.swift in Sources */,
 				24EADF6B1BF9657000558460 /* AddEventViewController.swift in Sources */,
 				248EC9251BFA514B001EED34 /* EventsTableViewController.swift in Sources */,
@@ -380,6 +396,7 @@
 				24D8EFCF1C03C632007D8686 /* PastEventsViewController.swift in Sources */,
 				24EADF691BF95ED700558460 /* HomeViewController.swift in Sources */,
 				24C4B7261BFCFE9A00535BD0 /* EventCell.swift in Sources */,
+				245EA5851C14CDD90031729D /* AppNavigationController.swift in Sources */,
 				24D8EFCB1C039BC8007D8686 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Eliminator",
@@ -530,6 +548,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.creighton.jmac.Eliminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eliminator/Eliminator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -537,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Eliminator",
@@ -545,6 +566,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.creighton.jmac.Eliminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eliminator/Eliminator-Bridging-Header.h";
 			};
 			name = Release;
 		};

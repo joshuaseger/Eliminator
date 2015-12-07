@@ -1,4 +1,10 @@
 What fields should be on the Company Profile form?
+Company Name
+About Us
+HQ
+Locations
+Images
+# of Employees
 
 What fields should be on the Create Event form?
 What fields should be on the Create Candidate form?
@@ -14,6 +20,8 @@ What fields should be on the Create Candidate form?
     GPA
     Major
     Graduation Date -> GradDate
+    Willing to relocate?
+    
 
 What all should be displayed on the Landing page?
 
