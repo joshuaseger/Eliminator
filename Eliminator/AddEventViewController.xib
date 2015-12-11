@@ -32,26 +32,22 @@
                 </datePicker>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sponsoring Party" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-4d-6cS">
                     <rect key="frame" x="165" y="156" width="271" height="30"/>
+                    <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="271" id="RDQ-CA-bHi"/>
                     </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-qY-JBR">
                     <rect key="frame" x="165" y="118" width="269" height="30"/>
+                    <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="269" id="5sb-Qr-fXI"/>
                     </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-FW-V03">
-                    <rect key="frame" x="165" y="80" width="269" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="269" id="0Ez-yD-4o2"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-JO-pu7">
@@ -68,8 +64,18 @@
                 <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-n2-9Au">
                     <rect key="frame" x="225" y="194" width="148" height="77"/>
                 </pickerView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-FW-V03">
+                    <rect key="frame" x="165" y="80" width="269" height="30"/>
+                    <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="269" id="0Ez-yD-4o2"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
-            <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="kV2-Tp-JWt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DQR-Jz-tln"/>
                 <constraint firstItem="P2b-JO-pu7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DYL-Rz-vpg"/>

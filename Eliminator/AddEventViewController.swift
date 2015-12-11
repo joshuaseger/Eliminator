@@ -36,9 +36,9 @@ class AddEventViewController: UIViewController, UIPickerViewDataSource,UIPickerV
             event["Attire"] = attireData[attireIndex];
             event["Date"] = EventDate.date
             
-            let jobPostRelation = event.relationforKey("JobPostList")
+            let jobPostRelation = event.relationForKey("JobPostList")
             for post in self.jobPostings{
-                 post.saveInBackground()
+                post.saveInBackground()
                  jobPostRelation.addObject(post)
             }
             event.saveInBackgroundWithBlock {

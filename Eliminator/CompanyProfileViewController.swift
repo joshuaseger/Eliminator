@@ -25,7 +25,7 @@ class CompanyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         jobPosting.saveInBackgroundWithBlock{
             (success: Bool, error: NSError?) -> Void in
             if(success){
-                var relation = self.user?.relationforKey("JobPostingList")
+                var relation = self.user?.relationForKey("JobPostingList")
                 relation?.addObject(jobPosting)
                 self.user?.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError?) -> Void in

@@ -13,27 +13,41 @@ class CandidateFormViewController: UIViewController, UINavigationControllerDeleg
 
     @IBOutlet weak var jobInterestToggle: UISwitch!
     var jobInterestArray : [Bool] = []
-    @IBOutlet weak var resumeLabel: UILabel!
-    @IBOutlet weak var headshotLabel: UILabel!
     @IBOutlet weak var resumePreview: UIImageView!
     @IBOutlet weak var headshotPreview: UIImageView!
     @IBOutlet weak var jobPostingPicker: UIPickerView!
+    @IBOutlet weak var firstNameLabel: UITextField!
+    @IBOutlet weak var lastNameLabel: UITextField!
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var phoneLabel: UITextField!
+    @IBOutlet weak var universityLabel: UITextField!
+    @IBOutlet weak var gpaLabel: UITextField!
+    @IBOutlet weak var majorLabel: UITextField!
+    @IBOutlet weak var graduationDatePicker: UIDatePicker!
+    @IBOutlet weak var interestIndicatorImage: UIImageView!
+    @IBOutlet weak var headshotButton: UIButton!
+    @IBOutlet weak var resumeButton: UIButton!
+    
     var jobPostList : [PFObject] = []
     var selectedJobPosting = PFObject(className: "JobPosting")
     var user = PFUser.currentUser()
     var event : PFObject!;
     var resumePicker: UIImagePickerController!
     var headshotPicker: UIImagePickerController!
-    var postingCurrentIndex = 0
+    var postingCurrentIndex = 0;
+    var setResumePreview = false;
+    var setHeadshotPreview = false;
     
-    @IBOutlet weak var firstNameLabel: UITextField!
-    @IBOutlet weak var lastNameLabel: UITextField!
-    @IBOutlet weak var emailLabel: UITextField!
-    @IBOutlet weak var universityLabel: UITextField!
-    @IBOutlet weak var gpaLabel: UITextField!
-    @IBOutlet weak var majorLabel: UITextField!
-    @IBOutlet weak var graduationDatePicker: UIDatePicker!
-    @IBOutlet weak var interestIndicatorImage: UIImageView!
+    func formFilledOut() -> Bool {
+        if(self.setHeadshotPreview){
+            if(self.firstNameLabel.hasText() && self.lastNameLabel.hasText() &&
+                self.emailLabel.hasText() && self.universityLabel.hasText() &&
+                self.gpaLabel.hasText() && self.majorLabel.hasText()){
+                    return self.jobInterestArray.contains(true)
+            }
+        }
+        return false;
+    }
     
     
     
@@ -64,15 +78,18 @@ class CandidateFormViewController: UIViewController, UINavigationControllerDeleg
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        if(picker == self.resumePicker){
+        if(picker.isEqual(self.resumePicker)){
             resumePicker.dismissViewControllerAnimated(true, completion: nil)
             resumePreview.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            resumeLabel.hidden = true
+            resumePreview.hidden = false
+            self.setResumePreview = true
         }
         else{
             headshotPicker.dismissViewControllerAnimated(true, completion: nil)
             headshotPreview.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            headshotLabel.hidden = true
+            headshotPreview.hidden = false
+            self.setHeadshotPreview = true
+            
             
         }
        
@@ -114,10 +131,79 @@ class CandidateFormViewController: UIViewController, UINavigationControllerDeleg
     }
     
     @IBAction func createCandidate(sender: AnyObject) {
+        if(self.formFilledOut()){
+            let candidate = PFObject(className: "Candidate")
+            candidate["FirstName"] = self.firstNameLabel.text
+            candidate["LastName"] = self.lastNameLabel.text
+            candidate["Email"] = self.emailLabel.text
+            candidate["Phone"] = self.phoneLabel.text
+            candidate["University"] = self.universityLabel.text
+            candidate["gpa"] = self.gpaLabel.text
+            candidate["Major"] = self.majorLabel.text
+            candidate["GradDate"] = self.graduationDatePicker.date
+            candidate["Event"] = PFObject(withoutDataWithClassName: "UpcomingEvent", objectId: event.objectId)
+            var i = 0;
+            let JobPostingRelation = candidate.relationForKey("JobPostList")
+            
+            for job in self.jobPostList{
+                if (self.jobInterestArray[i]){
+                
+                    do{
+                        try job.save()
+                    }
+                    catch _ {
+                        self.displayAlertWithTitle("Couldn't save job posts associated with Candidate", message: "Ooops")
+                    }
+                
+                    JobPostingRelation.addObject(job)
+                }
+                i++
+            }
+            
+            if(self.setResumePreview){
+                let resume = UIImageJPEGRepresentation(self.resumePreview.image!, 0.99)
+                let resumeFile = PFFile(data: resume!)
+                candidate["Resume"] = resumeFile;
+            }
+            if(self.setHeadshotPreview){
+                let headshot = UIImageJPEGRepresentation(self.headshotPreview.image!, 0.8)
+                let headshotFile = PFFile(data: headshot!)
+                candidate["Headshot"] = headshotFile;
+            }
+            
+            candidate.saveInBackgroundWithBlock{
+                (success: Bool, error: NSError?) -> Void in
+                if(success){
+                    let relation = self.event.relationForKey("CandidateList")
+                    relation.addObject(candidate)
+                    self.event.saveInBackgroundWithBlock {
+                        (success: Bool, error: NSError?) -> Void in
+                        if(success){
+                            self.displayAlertWithTitle("Candidate successfully saved.", message: "We wish you the best of luck!")
+                            let userRelation = self.user!.relationForKey("CandidateList")
+                            userRelation.addObject(candidate);
+                            self.user?.saveInBackground()
+                            
+                        }
+                        else{
+                            self.displayAlertWithTitle("Candidate did not save", message: "Failed to create relation for key CandidateList")
+                        }
+                    }
+                }
+                else{
+                    self.displayAlertWithTitle("Candidate did not save", message: "Failed to save Candidate.  Check your connection.")
+                }
+                
+            }
+            
+        }
+        else {
+            self.displayAlertWithTitle("All fields must be filled before submission", message: "Fill out all the fields and be sure to include a headshot and resume picture.")
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
-        let relation = event?.relationforKey("JobPostList")
+        let relation = event?.relationForKey("JobPostList")
         relation?.query()!.findObjectsInBackgroundWithBlock {
             (postings: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
@@ -137,7 +223,6 @@ class CandidateFormViewController: UIViewController, UINavigationControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         graduationDatePicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         graduationDatePicker.performSelector("setHighlightsToday:", withObject:UIColor.whiteColor())
 
@@ -149,6 +234,11 @@ class CandidateFormViewController: UIViewController, UINavigationControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    func displayAlertWithTitle(title: String, message: String){
+        let controller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        controller.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(controller, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
