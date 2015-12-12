@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyProfileViewController" customModule="Eliminator" customModuleProvider="target">
             <connections>
+                <outlet property="cityInput" destination="WVj-qG-vRG" id="Mia-98-ZfZ"/>
                 <outlet property="companyDescription" destination="LEO-4j-Uhu" id="fQz-0g-CiJ"/>
                 <outlet property="companyName" destination="4Yz-5M-8qr" id="dWt-jL-Ca7"/>
                 <outlet property="companySize" destination="Blp-5G-0hm" id="FbR-to-lYF"/>
+                <outlet property="descInput" destination="LEO-4j-Uhu" id="NaV-8f-EpG"/>
+                <outlet property="foundedInput" destination="dT4-Bi-29b" id="DSs-HX-mRe"/>
                 <outlet property="hqCity" destination="WVj-qG-vRG" id="uTn-6B-eoM"/>
                 <outlet property="hqState" destination="VH9-WE-yW8" id="UGP-FD-drI"/>
                 <outlet property="jobCity" destination="OAY-3A-Mi8" id="nT6-LP-LsP"/>
                 <outlet property="jobPostingPicker" destination="OpM-cy-xLk" id="OB2-LE-TMe"/>
                 <outlet property="jobState" destination="HLC-MK-OSK" id="l7s-3V-bQv"/>
                 <outlet property="jobTitle" destination="kEi-aN-R8p" id="ExU-Le-GVO"/>
+                <outlet property="nameInput" destination="4Yz-5M-8qr" id="1D8-30-Udv"/>
+                <outlet property="numEmployeesInput" destination="Blp-5G-0hm" id="yIT-nz-l9w"/>
+                <outlet property="stateInput" destination="VH9-WE-yW8" id="q10-KL-xkn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="zLd-QK-1Hb"/>
                 <outlet property="yearFound" destination="dT4-Bi-29b" id="UNE-mk-Dm6"/>
             </connections>
@@ -26,6 +32,7 @@
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Yz-5M-8qr">
                     <rect key="frame" x="61" y="43" width="460" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,6 +41,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Headquarters City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVj-qG-vRG">
                     <rect key="frame" x="61" y="81" width="137" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,6 +50,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-WE-yW8">
                     <rect key="frame" x="206" y="81" width="64" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,6 +59,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# of Employees" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Blp-5G-0hm">
                     <rect key="frame" x="586" y="43" width="121" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,6 +68,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-Bi-29b">
                     <rect key="frame" x="418" y="81" width="120" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,42 +77,49 @@
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Create your Company Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBU-uR-Kbe">
                     <rect key="frame" x="274" y="8" width="220" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6x-et-16B">
                     <rect key="frame" x="8" y="47" width="45" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-NH-aut">
                     <rect key="frame" x="8" y="84" width="25" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-NR-RK6">
                     <rect key="frame" x="545" y="47" width="33" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year Founded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qT-1d-WJi">
                     <rect key="frame" x="296" y="85" width="114" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Company Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHY-hZ-DPn">
                     <rect key="frame" x="302" y="129" width="165" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-88-Wqe">
                     <rect key="frame" x="360" y="986" width="49" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Submit"/>
                     <connections>
@@ -110,6 +128,7 @@
                 </button>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpM-cy-xLk">
                     <rect key="frame" x="15" y="437" width="599" height="216"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="216" id="h0h-RA-dzc"/>
                         <constraint firstAttribute="width" constant="599" id="rPI-Yd-yRP"/>
@@ -117,6 +136,7 @@
                 </pickerView>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46J-Ql-NKT">
                     <rect key="frame" x="616" y="528" width="91" height="34"/>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <state key="normal" title="Delete">
@@ -125,6 +145,7 @@
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-aN-R8p">
                     <rect key="frame" x="8" y="372" width="344" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,12 +154,14 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-jM-3bp">
                     <rect key="frame" x="685" y="376" width="22" height="22"/>
+                    <animations/>
                     <connections>
                         <action selector="createJobPosting:" destination="-1" eventType="touchUpInside" id="cB7-gp-Vi7"/>
                     </connections>
                 </button>
                 <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-MK-OSK">
                     <rect key="frame" x="586" y="337" width="66" height="106"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="66" id="7Xz-NE-v3W"/>
                         <constraint firstAttribute="height" constant="106" id="vup-4i-6Kd"/>
@@ -146,6 +169,7 @@
                 </pickerView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Begin typing your company description here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-4j-Uhu">
                     <rect key="frame" x="15" y="158" width="692" height="128"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -158,12 +182,14 @@
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Create new Job Posting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hv-wT-hO5">
                     <rect key="frame" x="8" y="337" width="189" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAY-3A-Mi8">
                     <rect key="frame" x="360" y="372" width="204" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -174,6 +200,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="OpM-cy-xLk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="0lg-Rm-ADJ"/>

@@ -12,8 +12,37 @@ import Parse
 
 class CompanyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    
+    
+    @IBOutlet weak var nameInput: UITextField!
+    @IBOutlet weak var cityInput: UITextField!
+    @IBOutlet weak var stateInput: UITextField!
+    @IBOutlet weak var foundedInput: UITextField!
+    @IBOutlet weak var numEmployeesInput: UITextField!
+    @IBOutlet weak var descInput: UITextView!
+    
     @IBAction func submitButton(sender: AnyObject) {
+        var user = PFUser.currentUser()
+        user!["City"] = cityInput.text
+        user!["CompanyName"] = nameInput.text
+        user!["State"] = stateInput.text
+        user!["YearFounded"] = foundedInput.text
+        user!["NumEmployees"] = numEmployeesInput.text
+        user!["Description"] = descInput.text
         
+        user!.saveInBackgroundWithBlock{
+            (success: Bool, error: NSError?) -> Void in
+            if(success){
+                self.displayAlertWithTitle("Company Info Updated", message: "Company Info Updated.")
+
+            
+            }
+            else{
+                self.displayAlertWithTitle("Company Info did not save", message: "Failed to save Company Info.  Check your connection.")
+            }
+        }
+
+
     }
 
     @IBAction func createJobPosting(sender: AnyObject) {
@@ -21,7 +50,6 @@ class CompanyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         jobPosting["Title"] = jobTitle.text
         jobPosting["City"] = jobCity.text
         jobPosting["State"] = selectedState
-        
         jobPosting.saveInBackgroundWithBlock{
             (success: Bool, error: NSError?) -> Void in
             if(success){
