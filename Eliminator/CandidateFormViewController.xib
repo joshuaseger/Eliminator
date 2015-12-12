@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CandidateFormViewController" customModule="Eliminator" customModuleProvider="target">
@@ -31,6 +31,7 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResumePlaceholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="f8m-hy-blc">
                     <rect key="frame" x="29" y="234" width="200" height="200"/>
+                    <animations/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="V6j-nt-6Og"/>
@@ -39,6 +40,7 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeadshotPlaceholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V55-LG-sCa">
                     <rect key="frame" x="28" y="26" width="200" height="200"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="Cea-eh-soH"/>
                         <constraint firstAttribute="width" constant="200" id="JIv-Tc-65b"/>
@@ -46,6 +48,7 @@
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEz-bp-igT">
                     <rect key="frame" x="319" y="135" width="149" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="149" id="cwM-I5-Ohb"/>
@@ -56,6 +59,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAE-b6-nO0">
                     <rect key="frame" x="320" y="173" width="355" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="355" id="cOH-KN-6ID"/>
@@ -72,6 +76,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-tv-Dyp">
                     <rect key="frame" x="477" y="97" width="198" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="198" id="aPs-BV-7oP"/>
@@ -82,18 +87,21 @@
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Candidate Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-tp-F38">
                     <rect key="frame" x="387" y="45" width="184" height="44"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Graduation Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5py-mh-5Qi">
                     <rect key="frame" x="416" y="255" width="126" height="21"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-12-u7a">
                     <rect key="frame" x="302" y="284" width="355" height="150"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="KUe-F9-IeG"/>
                         <constraint firstAttribute="width" constant="355" id="UtW-xB-BMA"/>
@@ -120,6 +128,7 @@
                 </datePicker>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GPA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7C-0l-Oa4">
                     <rect key="frame" x="319" y="211" width="51" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="51" id="Q0y-bT-Npd"/>
@@ -138,6 +147,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Major(s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3q-LS-dVq">
                     <rect key="frame" x="377" y="211" width="297" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="7dw-7f-ghT"/>
@@ -149,6 +159,7 @@
                 </textField>
                 <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soe-Ys-bNt">
                     <rect key="frame" x="105" y="511" width="559" height="216"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="216" id="Sal-Kn-JmZ"/>
                         <constraint firstAttribute="width" constant="559" id="ody-HP-zmj"/>
@@ -168,12 +179,14 @@
                 </pickerView>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-lj-YRf">
                     <rect key="frame" x="672" y="603" width="51" height="31"/>
+                    <animations/>
                     <connections>
                         <action selector="toggleJobInterest:" destination="-1" eventType="valueChanged" id="LOs-gf-yW5"/>
                     </connections>
                 </switch>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuh-J1-BNR">
                     <rect key="frame" x="278" y="735" width="213" height="79"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.0" green="0.44106588359999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="213" id="Uhp-BW-40l"/>
@@ -188,6 +201,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kr-me-qlU">
                     <rect key="frame" x="206" y="26" width="22" height="22"/>
+                    <animations/>
                     <state key="normal">
                         <color key="titleColor" red="0.30281230180000002" green="0.82247010549999999" blue="0.086154908000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,6 +212,7 @@
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="xMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="XBu-lL-2lp">
                     <rect key="frame" x="50" y="595" width="47" height="47"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="47" id="1T8-Gz-10K"/>
                         <constraint firstAttribute="width" constant="47" id="bmP-YE-wC4"/>
@@ -205,6 +220,7 @@
                 </imageView>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-ZW-1yr">
                     <rect key="frame" x="0.0" y="442" width="768" height="9"/>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="768" id="YSi-r6-iUf"/>
@@ -212,6 +228,7 @@
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Job Postings Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bms-VG-KPi">
                     <rect key="frame" x="213" y="459" width="342" height="44"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="CmL-h3-CLR"/>
                         <constraint firstAttribute="width" constant="342" id="QuA-SO-OEC"/>
@@ -222,6 +239,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="35" placeholderIntrinsicHeight="35" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQi-hw-rvc">
                     <rect key="frame" x="206" y="234" width="22" height="22"/>
+                    <animations/>
                     <state key="normal">
                         <color key="titleColor" red="0.30281230180000002" green="0.82247010549999999" blue="0.086154908000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -231,6 +249,7 @@
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIR-fq-8pK">
                     <rect key="frame" x="477" y="135" width="197" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41623403460000002" green="0.2486017985" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="197" id="40U-JH-fnr"/>
@@ -241,6 +260,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-tG-9Gl">
                     <rect key="frame" x="320" y="97" width="149" height="30"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.41568627450980389" green="0.24705882352941178" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="149" id="th2-dU-uA7"/>
@@ -250,6 +270,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="fqP-12-u7a" firstAttribute="top" secondItem="5py-mh-5Qi" secondAttribute="bottom" constant="8" id="0iM-e5-VI1"/>
