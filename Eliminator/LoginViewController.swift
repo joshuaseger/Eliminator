@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Eliminator
 //
-//  Created by Joshua Seger on 11/23/15.
+//  Created by Joshua Seger, Justin Peck on 11/23/15.
 //  Copyright © 2015 Creighton. All rights reserved.
 //
 
